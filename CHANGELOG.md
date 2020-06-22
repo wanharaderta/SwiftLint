@@ -15,6 +15,9 @@
 
 #### Enhancements
 
+* Add `non_private_xctest_member` rule  
+  [Keith Smiley](https://github.com/keith)
+  [#3248](https://github.com/realm/SwiftLint/pull/3248)
 * JUnit reporter for GitLab artifact:report:junit with better representation of
   found issues.  
   [krin-san](https://github.com/krin-san)
