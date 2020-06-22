@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.17.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.18.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 @testable import SwiftLintFrameworkTests
@@ -482,6 +482,12 @@ extension ExplicitTypeInterfaceRuleTests {
 extension ExtendedNSStringTests {
     static var allTests: [(String, (ExtendedNSStringTests) -> () throws -> Void)] = [
         ("testLineAndCharacterForByteOffset_forContentsContainingMultibyteCharacters", testLineAndCharacterForByteOffset_forContentsContainingMultibyteCharacters)
+    ]
+}
+
+extension ExtendedStringTests {
+    static var allTests: [(String, (ExtendedStringTests) -> () throws -> Void)] = [
+        ("testCountOccurrences", testCountOccurrences)
     ]
 }
 
@@ -995,6 +1001,12 @@ extension NoGroupingExtensionRuleTests {
 
 extension NoSpaceInMethodCallRuleTests {
     static var allTests: [(String, (NoSpaceInMethodCallRuleTests) -> () throws -> Void)] = [
+        ("testWithDefaultConfiguration", testWithDefaultConfiguration)
+    ]
+}
+
+extension NonPrivateXCTestMembersRuleTests {
+    static var allTests: [(String, (NonPrivateXCTestMembersRuleTests) -> () throws -> Void)] = [
         ("testWithDefaultConfiguration", testWithDefaultConfiguration)
     ]
 }
@@ -1722,6 +1734,7 @@ XCTMain([
     testCase(ExplicitTypeInterfaceConfigurationTests.allTests),
     testCase(ExplicitTypeInterfaceRuleTests.allTests),
     testCase(ExtendedNSStringTests.allTests),
+    testCase(ExtendedStringTests.allTests),
     testCase(ExtensionAccessModifierRuleTests.allTests),
     testCase(FallthroughRuleTests.allTests),
     testCase(FatalErrorMessageRuleTests.allTests),
@@ -1788,6 +1801,7 @@ XCTMain([
     testCase(NoFallthroughOnlyRuleTests.allTests),
     testCase(NoGroupingExtensionRuleTests.allTests),
     testCase(NoSpaceInMethodCallRuleTests.allTests),
+    testCase(NonPrivateXCTestMembersRuleTests.allTests),
     testCase(NotificationCenterDetachmentRuleTests.allTests),
     testCase(NumberSeparatorRuleTests.allTests),
     testCase(ObjectLiteralRuleTests.allTests),

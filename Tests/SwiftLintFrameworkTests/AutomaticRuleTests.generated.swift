@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.17.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.18.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 import SwiftLintFramework
@@ -459,6 +459,12 @@ class NoGroupingExtensionRuleTests: XCTestCase {
 class NoSpaceInMethodCallRuleTests: XCTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(NoSpaceInMethodCallRule.description)
+    }
+}
+
+class NonPrivateXCTestMembersRuleTests: XCTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(NonPrivateXCTestMembersRule.description)
     }
 }
 
